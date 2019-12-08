@@ -1,4 +1,4 @@
-# Testproject «Mikocin» [Viktoria Nosick]
+# Test project «Mikocin» [Viktoria Nosick]
 
 _Do not delete files:_
 _`gulpfile.js`, `package.json`._
