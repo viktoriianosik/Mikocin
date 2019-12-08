@@ -1,0 +1,89 @@
+.benefits {
+    position: relative;
+    padding-top: 120px;
+    text-align: center;
+}
+
+.benefits::before {
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 61px;
+    height: 59px;
+    background: url("../image/circle-orange.png") no-repeat 0 0;
+}
+
+.benefits__title {
+    max-width: 830px;
+    margin: 0 auto 22px;
+    font-size: 47px;
+    line-height: 48px;
+    font-weight: $font-weight-black;
+    color: $black;
+}
+
+.benefits__description {
+    margin: 0;
+    margin-bottom: 90px;
+    font-size: 23px;
+    line-height: 48px;
+    color: $light-black;
+}
+
+.benefits__use {
+    margin: 0;
+    padding: 32px 30px 32px 25px;
+    font-size: 27px;
+    line-height:  27px;
+    font-weight: $font-weight-medium;
+    color: $black;
+    background-color: $white;
+}
+
+@media (max-width: $width-992) {
+    .benefits__title{
+      font-size: 36px;
+      line-height: 36px;
+    }
+
+    .benefits__description {
+        font-size: 20px;
+        line-height: 28px;
+    }
+}
+
+@media (max-width: $width-640) {
+    .benefits {
+        padding-top: 90px;
+        margin-bottom: 30px;
+    }
+
+    .benefits::before {
+        top: 15px;
+    }
+
+    .benefits__title{
+      font-size: 30px;
+      line-height: 30px;
+      font-weight: $font-weight-bold;
+    }
+
+    .benefits__description {
+        margin-bottom: 60px;
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .benefits__use {
+        padding: 15px;
+        font-size: 24px;
+        line-height: 24px;
+    }
+}
+
+
+
+

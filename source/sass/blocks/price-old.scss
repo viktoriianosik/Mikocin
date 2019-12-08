@@ -1,0 +1,35 @@
+.price-old {
+    width: 50%;
+    text-align: center;
+}
+
+.price-old__text {
+    margin-bottom: 15px;
+    color: $grey;
+}
+
+.price-old__value {
+    padding-right: 23px;
+    font-weight: $font-weight-light;
+    color: $dark-grey;
+}
+
+.price-old__value::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 15px;
+    width: 88px;
+    height: 23px;
+    background: url("../image/crossed-line.svg") no-repeat 0 0;
+}
+
+.price-old__value::after {
+    content: "";
+    position: absolute;
+    top: -2px;
+    right: 17px;
+    width: 17px;
+    height: 26px;
+    background: url("../image/rub.svg") no-repeat 0 0;
+}

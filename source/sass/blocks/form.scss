@@ -1,0 +1,86 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form__input {
+    width: 130px;
+    padding: 23px;
+    padding-left: 55px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 18px;
+    box-shadow: inset 0 2px 7px rgba(0, 0, 0, 0.04);
+    border-radius: 32px;
+    background-color: #eef2f7;
+    border: none;
+    color: $grey;
+}
+
+.form__label {
+    position: relative;
+    width: 220px;
+}
+
+.form__label::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 21px;
+}
+
+.form__label--name::before {
+    width: 19px;
+    height: 23px;
+    background: url("../image/name.svg") no-repeat 0 0;
+}
+
+.form__label--phone::before {
+    width: 21px;
+    height: 24px;
+    background: url("../image/phone.svg") no-repeat 0 0;
+}
+
+.form__button {
+    max-width: 220px;
+    position: relative;
+    padding: 15px 48px;
+    font-size: 28px;
+    line-height: 20px;
+    font-weight: $font-weight-bold;
+    color: $black;
+    border: none;
+    border-radius: 32px;
+    background-color: #a8ca3f;
+    background-image: linear-gradient(to right, #ffbc02 0%, #ffce02 100%);
+    cursor: pointer;
+}
+
+.form__button::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 206px;
+    height: 55px;
+    background-color: transparent;
+    border: 2px solid $white;
+    opacity: 0.3;
+    border-radius: 27px;
+}
+
+.form__button--smaller {
+    font-size: 16px;
+    line-height: 14px;
+}
+
+@media (max-width: $width-768) {
+    .form {
+        margin-bottom: 10px;
+    }
+
+    .form__button {
+       font-size: 24px;
+    }
+}

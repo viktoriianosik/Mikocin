@@ -1,0 +1,130 @@
+.efficiency {
+    position: relative;
+    width: 100%;
+    padding: 250px 0 80px;
+    background-color: $blue-f8;
+    background: url("../image/efficiency.jpg") no-repeat 0 0;
+    text-align: center;
+}
+
+.efficiency::before {
+    content: "";
+    position: absolute;
+    top: 166px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 92px;
+    height: 65px;
+    background: url("../image/circles.png") no-repeat 0 0;
+}
+
+.efficiency__title {
+    max-width: 1030px;
+    margin: 0 auto 77px;
+    padding: 0 15px;
+    font-size: 48px;
+    line-height: 48px;
+    font-weight: $font-weight-black;
+    color: $dark-black;
+}
+
+.efficiency__conclusion {
+    position: relative;
+    width: 83px;
+    padding: 0 44px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: $font-weight-bold;
+    color: $black;
+    text-transform: uppercase;
+    z-index: 10;
+}
+
+.efficiency__conclusion::before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 0;
+    width: 170px;
+    height: 50px;
+    background: url("../image/hail-sign.png") no-repeat 0 0;
+    z-index: -1;
+}
+
+.efficiency__conclusion-text {
+    margin: -35px 15px 0 15px;
+    padding: 29px 91px 22px 94px;
+    font-size: 21px;
+    line-height: 28px;
+    color: $light-black;
+    border: 3px solid $orange-f4;
+}
+
+.efficiency__conclusion-medium {
+    font-weight: $font-weight-medium;
+    color: $black;
+}
+
+@media (max-width: $width-992) {
+    .efficiency__title {
+        font-size: 36px;
+        line-height: 36px;
+    }
+
+    .efficiency__conclusion-text {
+        padding: 15px;
+        padding-top: 30px;
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
+
+@media (max-width: $width-768) {
+    .efficiency {
+        padding-top: 200px;
+    }
+
+    .efficiency::before {
+        top: 130px;
+    }
+
+    .efficiency__title {
+        font-size: 30px;
+        line-height: 30px;
+        margin-bottom: 30px;
+    }
+
+    .efficiency__conclusion-text {
+        padding: 15px;
+        padding-top: 30px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
+
+@media (max-width: $width-640) {
+    .efficiency {
+        padding-top: 70px;
+        padding-bottom: 20px;
+        background: none;
+        background-color: $blue-ec;
+    }
+
+    .efficiency::before {
+        top: 9px;
+    }
+
+    .efficiency__title {
+        font-size: 24px;
+        line-height: 24px;
+    }
+
+    .efficiency__conclusion-text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}

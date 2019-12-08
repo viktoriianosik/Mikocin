@@ -1,0 +1,185 @@
+.medicines-list {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.medicines-list__item {
+    position: relative;
+    width: 330px;
+    padding: 65px 20px 30px 20px;
+    background-color: $white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top: 5px solid $green-a8;
+}
+
+.medicines-list__title {
+    margin: 0 auto 15px;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: $font-weight-bold;
+    color: $black;
+}
+
+.medicines-list__description {
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: $font-weight-medium;
+    color: $black-22;
+}
+
+.medicines-list__forms {
+    display: block;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 28px;
+    font-style: italic;
+    color: $grey;
+}
+
+.medicines-list__item::before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: $blue-f8;
+}
+
+.medicines-list__item--first::before {
+    background-color: $blue-ec;
+}
+
+.medicines-list__item--second::before {
+    background-color: $blue-f2;
+}
+
+.medicines-list__item--first::after {
+    content: "";
+    position: absolute;
+    top: -33px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 70px;
+    height: 66px;
+    background: url("../image/star.svg") no-repeat 0 0;
+}
+
+.medicines-list__item--second::after {
+    content: "";
+    position: absolute;
+    top: -37px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 48px;
+    height: 75px;
+    background: url("../image/gel.svg") no-repeat 0 0;
+}
+
+.medicines-list__item--third::after {
+    content: "";
+    position: absolute;
+    top: -27px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 59px;
+    height: 63px;
+    background: url("../image/tablet.svg") no-repeat 0 0;
+}
+
+
+@media (max-width: $width) {
+    .medicines-list__item {
+        width: 270px;
+    }
+
+    .medicines-list__description {
+        font-size: 16px;
+        line-height: 22px;
+    }
+}
+
+@media (max-width: $width-992) {
+    .medicines-list__item {
+        width: 220px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .medicines-list__title {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .medicines-list__description {
+        font-size: 14px;
+        line-height: 28px;
+    }
+
+    .medicines-list__forms {
+        font-size: 14px;
+        line-height: 28px;
+    }
+}
+
+@media (max-width: $width-768) {
+    .medicines-list__item {
+        width: 180px;
+        margin-top: 10px;
+        margin-bottom: 50px;
+        border-radius: 10px;
+    }
+
+    .medicines-list__title {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .medicines-list__description {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .medicines-list__forms {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .medicines-list__item--second::before,
+    .medicines-list__item--third::before {
+        background-color: $blue-ec;
+    }
+}
+
+@media (max-width: $width-640) {
+    .medicines-list__item {
+        width: 85px;
+        margin-bottom: 250px;
+        padding-top: 15px;
+    }
+
+    .medicines-list__item::before {
+        display: none;
+    }
+
+    .medicines-list__item::after {
+        display: none;
+    }
+
+    .medicines-list__title {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+

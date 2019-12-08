@@ -1,0 +1,20 @@
+.price-new {
+    width: 50%;
+    text-align: center;
+}
+
+.price-new__text {
+    margin-bottom: 7px;
+    color: $black;
+}
+
+.price-new__value {
+    width: 86px;
+    padding: 7px 10px;
+    margin: 0 auto;
+    font-weight: $font-weight-regular;
+    color: $black;
+    border-radius: 5px;
+    background-color: #ff6b00;
+    background-image: linear-gradient(to right, #ffbc02 0%, #ffce02 100%);
+}

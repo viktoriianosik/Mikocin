@@ -1,0 +1,116 @@
+.order {
+    position: relative;
+    width: 270px;
+    padding: 0 25px;
+    box-sizing: border-box;
+    text-align: center;
+    background: url("../image/order-background.png") no-repeat 0 0;
+}
+
+.order::after {
+    content: "";
+    position: absolute;
+    top: 185px;
+    right: -27px;
+    width: 49px;
+    height: 233px;
+    background: url("../image/arrow-right.svg") no-repeat 0 0;
+}
+
+.order__delivery {
+    position: relative;
+    margin: 0;
+    margin-bottom: 38px;
+    font-size: 16px;
+    line-height: 18px;
+    color: $light-black;
+    padding-left: 35px;
+}
+
+.order__delivery::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 52px;
+    width: 27px;
+    height: 15px;
+    background: url("../image/delivery.svg") no-repeat 0 0;
+}
+
+.order__text {
+    width: 165px;
+    margin: 0 auto 15px;
+    font-size: 20px;
+    line-height: 22px;
+    color: $black;
+}
+
+.order__deadline {
+    font-weight: $font-weight-medium;
+    color: $red;
+}
+
+.order__rest {
+    max-width: 190px;
+    margin: 0 auto 13px;
+    font-size: 18px;
+    color: $grey;
+}
+
+.order__rest--amount {
+    font-weight: $font-weight-medium;
+    color: $light-green;
+}
+
+.order__security {
+    position: absolute;
+    bottom: 22px;
+    left: 7px;
+    width: 256px;
+    padding: 14px;
+    padding-left: 66px;
+    box-sizing: border-box;
+    margin: 0;
+    font-size: 14px;
+    line-height: 16px;
+    color: $grey;
+    text-align: left;
+    background-color: $grey-background;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.order__security::before {
+    content: "";
+    position: absolute;
+    top: 11px;
+    left: 35px;
+    width: 19px;
+    height: 20px;
+    background: url("../image/security.svg") no-repeat 0 0;
+}
+
+
+@media (max-width: $width-768) {
+    .order__rest {
+       font-size: 14px;
+    }
+
+    .order__security {
+        bottom: 93px;
+    }
+}
+
+@media (max-width: $width-640) {
+    .order::after {
+       right: -10px;
+    }
+
+    .order {
+        padding-bottom: 55px;
+    }
+
+    .order__security {
+        bottom: 5px;
+    }
+}

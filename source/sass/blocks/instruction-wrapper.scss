@@ -1,0 +1,24 @@
+.instruction-wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 860px;
+    margin: 0 auto;
+}
+
+@media (max-width: $width-992) {
+    .instruction-wrapper {
+        max-width: $width-768;
+    }
+}
+
+@media (max-width: $width-768) {
+    .instruction-wrapper {
+        max-width: $width-640;
+    }
+}
+
+@media (max-width: $width-768) {
+    .instruction-wrapper {
+        max-width: $width-320;
+    }
+}

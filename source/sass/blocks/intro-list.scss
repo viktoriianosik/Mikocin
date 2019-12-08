@@ -1,0 +1,98 @@
+.intro-list {
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+}
+
+.intro-list::before {
+    content: "";
+    position: absolute;
+    top: 66px;
+    left: 25px;
+    width: 9px;
+    height: 146px;
+    background: url("../image/arrow.png") no-repeat 0 0;
+}
+
+.intro-list__item {
+    position: relative;
+    padding-left: 75px;
+    padding-bottom: 36px;
+    font-size: 20px;
+    line-height: 24px;
+    color: $light-black;
+    white-space: pre-line;
+}
+
+.intro-list__medium {
+    font-weight: $font-weight-medium;
+    color: $black;
+}
+
+.intro-list__underline {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+}
+
+.intro-list__underline--orange {
+    text-decoration-color: $red;
+}
+
+.intro-list__underline--green {
+    text-decoration-color: $green;
+}
+
+.intro-list__item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: $light-green;
+}
+
+.intro-list__item::after {
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    width: 46px;
+    height: 46px;
+    font-size: 20px;
+    line-height: 45px;
+    font-weight: $font-weight-bold;
+    text-align: center;
+    border-radius: 50%;
+    color: $white;
+    background-color: $green;
+}
+
+.intro-list__item--combo::after {
+    content: "2в1";
+}
+
+.intro-list__item--tablet::after {
+    content: "1";
+}
+
+.intro-list__item--gel::after {
+    content: "2";
+}
+
+@media (max-width: $width-768) {
+    .intro-list__item {
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+
+@media (max-width: $width-640) {
+    .intro-list__item {
+        max-width: 175px;
+    }
+
+    .intro-list::before {
+        display: none;
+    }
+}

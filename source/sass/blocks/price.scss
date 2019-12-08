@@ -1,0 +1,17 @@
+.price {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.price__text {
+    margin: 0;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.price__value {
+    position: relative;
+    margin: 0;
+    font-size: 34px;
+    line-height: 24px;
+}

@@ -1,0 +1,57 @@
+.container {
+    width: 100%;
+    max-width: $width;
+    margin: 0 auto;
+}
+
+.container--header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.container--intro {
+    position: relative;
+    display: flex;
+    max-width: 670px;
+    margin: 0;
+    margin-left: auto;
+    padding: 0 30px;
+}
+
+.container--benefits {
+    width: calc(100% - 30px);
+    padding: 0 15px;
+}
+
+@media (max-width: $width-992) {
+    .container {
+        max-width: $width-768;
+    }
+}
+
+@media (max-width: $width-768) {
+    .container {
+        max-width: $width-640;
+    }
+
+    .container--header {
+        align-items: flex-start;
+    }
+
+    .container--intro {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: $width-640) {
+    .container {
+        max-width: $width-320;
+        flex-direction: column;
+    }
+
+    .container--intro {
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+}

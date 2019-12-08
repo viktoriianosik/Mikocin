@@ -1,0 +1,156 @@
+.fungus-list {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.fungus-list__item {
+    position: relative;
+    width: 330px;
+    text-align: left;
+}
+
+.fungus-list__item::before {
+    content: "";
+    position: absolute;
+    top: -21px;
+    left: -18px;
+    width: 179px;
+    height: 120px;
+}
+
+.fungus-list__item--first::before {
+    background: url("../image/curve1.png") no-repeat 0 0;
+}
+
+.fungus-list__item--second::before {
+    background: url("../image/curve2.png") no-repeat 0 0;
+}
+
+.fungus-list__item--third::before {
+    background: url("../image/curve3.png") no-repeat 0 0;
+}
+
+.fungus-list__item::after {
+    position: absolute;
+    top: 13px;
+    left: 138px;
+    width: 50px;
+    height: 39px;
+    padding-top: 11px;
+    font-size: 30px;
+    line-height: 28px;
+    border-radius: 50%;
+    color: $white;
+    text-align: center;
+}
+
+.fungus-list__item--first::after {
+    content: "1";
+    background-color: $orange1;
+}
+
+.fungus-list__item--second::after {
+    content: "2";
+    background-color: $orange2;
+}
+
+.fungus-list__item--third::after {
+    content: "3";
+    background-color: $orange3;
+}
+
+.fungus-list__image {
+    margin-bottom: 30px;
+}
+
+.fungus-list__title {
+    width: 137px;
+    margin: 0;
+    padding-top: 55px;
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: $font-weight-medium;
+    color: $black;
+}
+
+.fungus-list__description {
+    position: relative;
+    width: 315px;
+    margin: 0;
+    margin-bottom: 75px;
+    padding-top: 20px;
+    font-size: 18px;
+    line-height: 28px;
+    color: $light-black;
+}
+
+.fungus-list__description::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background-color: $grey-be
+}
+
+@media (max-width: $width-1024) {
+    .fungus-list {
+        justify-content: center;
+    }
+
+    .fungus-list__item {
+        margin-right: 40px;
+    }
+}
+
+@media (max-width: $width-992) {
+    .fungus-list__item {
+        margin-right: 40px;
+    }
+}
+
+@media (max-width: $width-768) {
+    .fungus-list {
+        margin-bottom: 25px;
+    }
+
+    .fungus-list__item {
+        max-width: 250px;
+    }
+
+    .fungus-list__image {
+        width: 120px;
+        height: 120px;
+    }
+
+    .fungus-list__item::before {
+        display: none;
+    }
+
+    .fungus-list__item::after {
+        top: 0;
+        left: 90px;
+    }
+
+    .fungus-list__description {
+        width: 100%;
+        margin-bottom: 20px;
+        font-size: 16px;
+        line-height: 20px;
+        white-space: normal;
+    }
+
+    .fungus-list__title {
+        padding-left: 10px;
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+
+@media (max-width: $width-640) {
+    .fungus-list__item {
+        margin-right: 0;
+    }
+}
