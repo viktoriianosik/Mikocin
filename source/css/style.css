@@ -535,7 +535,7 @@ body {
   .order {
     padding-bottom: 55px; }
   .order__security {
-    bottom: 5px; } }
+    bottom: 15px; } }
 
 .price {
   display: -webkit-box;
